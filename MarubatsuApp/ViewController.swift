@@ -6,6 +6,15 @@
 //  Copyright © 2016年 NOWALL. All rights reserved.
 //
 
+
+/*
+ マルバツアプリとメモアプリを合体させましたね！
+今回はNavigationControllerを用いてpush遷移して
+４画面目でマルバツ画面に戻りましょう！
+*/
+
+
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -19,6 +28,8 @@ class ViewController: UIViewController {
     var currentQuestionNum: Int = 0
     // 正解数を格納するための変数
     var currentYesNum: Int = 0
+    
+    
     
     // ばつボタンを押したときに呼ばれる関数
     @IBAction func tappedNoButton(_ sender: UIButton) {
@@ -53,6 +64,12 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         showQuestion()
     }
+    
+    
+    
+    
+    
+    
     
     // 問題を表示するための関数
     func showQuestion() {
@@ -137,5 +154,13 @@ class ViewController: UIViewController {
         // 作成したアラートを表示
         present(alert, animated: true, completion: nil)
     }
+    
+
+    
+    
+    
+    
+    
+    
 }
 
